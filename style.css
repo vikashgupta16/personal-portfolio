@@ -10,25 +10,24 @@
 }
 
 :root {
-    --main-color: #ff6b6b; /* Vibrant Coral */
-    --body-color: #f7f7f7; /* Light Grayish White */
-    --container-color: #ffffff; /* White */
-    --heading-color: #2b2e4a; /* Dark Indigo */
-    --box-color: #f1f1f1; /* Soft Gray */
-    --bg-color: #2b2e4a; /* Dark Indigo */
+    --main-color: #647bff;
+    --body-color: #090a1a;
+    --container-color: #171b3c;
+    --heading-color: #222231;
+    --box-color: #0d0f26;
+    --bg-color: #fff;
 }
 
-.dark-theme {
-    --body-color: #121212; /* Dark Background */
-    --bg-color: #ffffff; /* Light Elements for Contrast */
-    --container-color: #1e1e1e; /* Dark Container */
-    --box-color: #2b2b2b; /* Darker Gray for Boxes */
-    --main-color: #ff6b6b; /* Vibrant Coral for Highlights */
-    --heading-color: #ffffff; /* White for Headings */
+.light-theme {
+    --body-color: #fff;
+    --bg-color: #090a1a;
+    --container-color: #dae0ff;
+    --box-color: #dae0ff;
 }
+
 body {
-    color: var(--heading-color); /* Use heading color for text */
-    background: var(--body-color); /* Set body background */
+    color: var(--bg-color);
+    background: var(--body-color);
 }
 
 html::-webkit-scrollbar {
@@ -37,8 +36,9 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: var(--heading-color); /* Dark Indigo */
+    background: var(--heading-color);
 }
+
 img {
     width: 100%;
 }
@@ -105,10 +105,11 @@ header {
 }
 
 .nav-link:hover {
-    color: var(--main-color); /* Change color on hover */
-    background: var(--container-color); /* Background on hover */
-    transition: 0.3s all linear; /* Smooth transition */
+    color: var(--main-color);
+    background: var(--container-color);
+    transition: 0.3s all linear;
 }
+
 #icon {
     width: 30px;
     cursor: pointer;
@@ -297,8 +298,8 @@ header {
 }
 
 .btn:hover {
-    background: #f07b3f; /* Warm Orange */
-    transition: 0.3s all linear; /* Smooth transition */
+    background: #546eff;
+    transition: 0.3s all linear;
 }
 
 .about-text p {
@@ -335,8 +336,6 @@ header {
     color: var(--main-color);
     padding: 10px;
     border-radius: 5rem;
-    color: var(--main-color); /* Vibrant Coral */
-
     border: 2px dashed var(--bg-color);
 }
 
@@ -382,7 +381,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-     background: rgba(43, 46, 74, 0.7); /* Dark Indigo with transparency */
+    background: hsl(234, 45%, 16%, 0.7);
 }
 
 .portfolio-overlay h2 {
@@ -469,7 +468,7 @@ header {
 }
 
 .footer-links a:hover {
-    color: var(--main-color); /* Vibrant Coral */
+    color: var(--main-color);
     transition: 0.3s all linear;
 }
 
