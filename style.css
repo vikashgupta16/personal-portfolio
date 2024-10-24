@@ -18,16 +18,17 @@
     --bg-color: #2b2e4a; /* Dark Indigo */
 }
 
-.light-theme {
-    --body-color: #ffffff; /* Light Mode Background */
-    --bg-color: #2b2e4a; /* Dark Indigo */
-    --container-color: #f1f1f1; /* Soft Gray */
-    --box-color: #f1f1f1; /* Soft Gray */
+.dark-theme {
+    --body-color: #121212; /* Dark Background */
+    --bg-color: #ffffff; /* Light Elements for Contrast */
+    --container-color: #1e1e1e; /* Dark Container */
+    --box-color: #2b2b2b; /* Darker Gray for Boxes */
+    --main-color: #ff6b6b; /* Vibrant Coral for Highlights */
+    --heading-color: #ffffff; /* White for Headings */
 }
-
 body {
-    color: var(--bg-color);
-    background: var(--body-color);
+    color: var(--heading-color); /* Use heading color for text */
+    background: var(--body-color); /* Set body background */
 }
 
 html::-webkit-scrollbar {
@@ -104,11 +105,10 @@ header {
 }
 
 .nav-link:hover {
-    color: var(--main-color);
-    background: var(--container-color);
-    transition: 0.3s all linear;
+    color: var(--main-color); /* Change color on hover */
+    background: var(--container-color); /* Background on hover */
+    transition: 0.3s all linear; /* Smooth transition */
 }
-
 #icon {
     width: 30px;
     cursor: pointer;
@@ -298,7 +298,7 @@ header {
 
 .btn:hover {
     background: #f07b3f; /* Warm Orange */
-    transition: 0.3s all linear;
+    transition: 0.3s all linear; /* Smooth transition */
 }
 
 .about-text p {
