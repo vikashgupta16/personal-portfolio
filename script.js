@@ -18,6 +18,21 @@ icon.onclick=function(){
         icon.src="images/sun.png";
     }
 }
+
+// Play Click Sound
+function playClickSound() {
+    const clickSound = document.getElementById('click-sound');
+    if (clickSound) {
+        clickSound.play();
+    } else {
+        console.error('Click sound element not found.');
+    }
+}
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', playClickSound);
+});
+
+// Email Validation and Sending
 //   email 
 function validate(){
     let name= document.querySelector(".name");
