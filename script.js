@@ -1,5 +1,19 @@
 let menu = document.querySelector(".menu-icon");
 let navbar = document.querySelector(".navbar");
+// Set light theme by default
+document.body.classList.add("light-theme");
+document.getElementById("icon").src = "images/moon.png"; // Set moon icon initially
+
+var icon = document.getElementById("icon");
+icon.onclick = function () {
+    document.body.classList.toggle("light-theme");
+    if (document.body.classList.contains("light-theme")) {
+        icon.src = "images/moon.png"; // Moon icon for dark mode
+    } else {
+        icon.src = "images/sun.png"; // Sun icon for light mode
+    }
+};
+
 menu.onclick = () => {
     navbar.classList.toggle("open-menu")
     menu.classList.toggle("move");

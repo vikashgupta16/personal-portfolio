@@ -10,11 +10,11 @@
 }
 
 :root {
-    --main-color: #647bff;
-    --body-color: #090a1a;
-    --container-color: #171b3c;
-    --heading-color: #222231;
-    --box-color: #0d0f26;
+    --main-color: #64d3ff;
+    --body-color: #09151a;
+    --container-color: #172f3c;
+    --heading-color: #222b31;
+    --box-color: #0d1d26;
     --bg-color: #fff;
 }
 
@@ -169,7 +169,7 @@ header {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    background: #98a7fc;
+    background: #98ebfc;
     overflow: hidden;
     margin-bottom: 2rem;
 }
@@ -298,7 +298,7 @@ header {
 }
 
 .btn:hover {
-    background: #546eff;
+    background: #54c3ff;
     transition: 0.3s all linear;
 }
 
@@ -307,6 +307,7 @@ header {
     letter-spacing: 1px;
     text-align: justify;
     margin-bottom: 1.5rem;
+    padding: 7px;
 }
 
 .services-content {
@@ -399,7 +400,7 @@ header {
 }
 
 .portfolio-overlay .bx:hover {
-    background: #546eff;
+    background: #54e0ff;
     transition: 0.3s all linear;
 }
 
@@ -408,39 +409,52 @@ header {
     transition: 0.3s all ease;
 }
 
+/* Contact Form Styling */
 .contact-form {
     max-width: 600px;
-    margin: auto;
-    width: 100%;
-    display: grid;
-    row-gap: 1rem;
+    margin: 2rem auto;
+    padding: 2rem; /* Added padding for clear edges */
+    border: 2px solid #ddd; /* Soft border for visible edges */
+    border-radius: 12px; /* Rounded corners for smoothness */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    background: #fff; /* Clear background */
 }
 
+/* Input Fields */
 .contact-form input,
 .contact-form textarea {
-    border: none;
+    width: 100%;
+    padding: 12px; /* Padding for better visibility */
+    margin-bottom: 1rem; /* Space between inputs */
+    border: 1px solid #aaa; /* Slightly darker border for clarity */
+    border-radius: 8px; /* Rounded input edges */
+    font-size: 16px; /* Larger font for readability */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Focus Effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
     outline: none;
-    font-size: 0.9rem;
-    padding: 15px;
-    color: var(--bg-color);
-    background: var(--box-color);
-    border-radius: 0.4rem;
+    border: 2px solid #6ee8f5; /* Highlight when focused */
+    box-shadow: 0 0 8px rgb(86, 159, 205);
 }
 
-.contact-form .send-btn {
-    width: 120px;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding: 12px;
-    background: var(--main-color);
+
+.send-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #6de8e2; 
+    color: white;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease;
 }
 
-.contact-form .send-btn:hover {
-    background: #546eff;
-    transition: 0.3s all linear;
+.send-btn:hover {
+    background: #47c4e3; 
 }
 
 .footer {
